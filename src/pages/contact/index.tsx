@@ -20,7 +20,7 @@ export default function Home() {
         <div className={styles.description}>
             <h1>Contact</h1>
           <p>
-            Get started by editing&nbsp;
+            Get started a by editing&nbsp;
             <code className={styles.code}>src/pages/index.tsx</code>
           </p>
           <div>
