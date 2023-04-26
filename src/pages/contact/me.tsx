@@ -2,10 +2,12 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import { projects } from '@/assets'
+//import { projects } from '@/assets'
 import Lightbox from 'yet-another-react-lightbox'
 import "yet-another-react-lightbox/styles.css";
 import { GalleryPortfolio } from '@/components/ui'
+
+import { projects } from '../../../fotos'
 
 const inter = Inter({ subsets: ['latin'] })
 
