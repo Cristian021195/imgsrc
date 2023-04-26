@@ -3,8 +3,20 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import { projects } from '@/assets'
+import Lightbox from 'yet-another-react-lightbox'
+import "yet-another-react-lightbox/styles.css";
+import { GalleryPortfolio } from '@/components/ui'
 
 const inter = Inter({ subsets: ['latin'] })
+
+/*
+
+            <Lightbox
+                open={true}
+                slides={projects}
+                render={{ slide: GalleryPortfolio }}
+              />
+ */
 
 export default function Home() {
   return (
@@ -22,6 +34,15 @@ export default function Home() {
             Get started by editing&nbsp;
             <code className={styles.code}>src/pages/index.tsx</code>
           </p>
+          <fieldset>
+            <legend>
+            <Lightbox
+                open={true}
+                slides={projects}
+                render={{ slide: GalleryPortfolio }}
+              />
+            </legend>
+          </fieldset>
           <div>
             <a
               href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
@@ -30,7 +51,8 @@ export default function Home() {
             >
               By{' '}
               <Image
-                src={"/images/projects/horabondi/contacto.jpg"}
+                //src={"/images/projects/horabondi/contacto.jpg"}
+                src={projects[0]}
                 alt="Vercel Logo"
                 className={styles.vercelLogo}
                 width={100}
