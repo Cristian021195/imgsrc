@@ -30,7 +30,7 @@ export default function Home() {
             >
               By{' '}
               <Image
-                src={projects[0]}
+                src={"/images/projects/horabondi/contacto.jpg"}
                 alt="Vercel Logo"
                 className={styles.vercelLogo}
                 width={100}

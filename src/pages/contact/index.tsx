@@ -5,7 +5,7 @@ import styles from '@/styles/Home.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
-import img3 from "../../../public/images/projects/horabondi/contacto.jpg";
+//import img3 from "../../../public/images/projects/horabondi/contacto.jpg";
 
 export default function Home() {
   return (
@@ -31,7 +31,7 @@ export default function Home() {
             >
               By{' '}
               <Image
-                src={img3}
+                src="/images/projects/horabondi/contacto.jpg"
                 alt="Vercel Logo"
                 className={styles.vercelLogo}
                 width={100}
